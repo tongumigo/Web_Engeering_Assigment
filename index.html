@@ -5,59 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home|Butterfly Conservation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
   </head>
 
-  <body>
+  <body>   
+    <div class="nav-extention">
+
+  
+
+      </div>
+
     <main>
-        <nav>
-            <img src="images/logo.svg" alt="logo">
-           
+   
+      <nav class="flex">
+        <img class="logo-head" src="images/logo.svg" alt="logo">
+       <ul class="primary-nav flex">
+        <li>
+          <a href="#">Home</a>
+        </li>
 
-            <a href="#">Home</a>
-            <div class="dropdown">
-                <a href="#" class="droplink">Learn more</a>
-                <div class="dropdown-content">
-                    <a href="#">Sight Seeing</a>
-                    <a href="#">Endanger Species</a>
-                    <a href="#">Around the World</a>
-                </div>
+        <li>
+          <div class="dropdown">
+            <a href="#" class="droplink">Learn more</a>
+            <div class="dropdown-content">
+                <a href="#">Sight Seeing</a>
+                <a href="#">Endanger Species</a>
+                <a href="#">Around the World</a>
             </div>
-            
-            <a href="#">Join Our Community</a>
-            <a href="#">About</a>
-        </nav>
+        </div>
+        
+        </li>
 
 
+        <li>
+          <a href="#">Join Our Community</a>
+        </li>
+
+
+        <li>
+      <a href="#">About</a>
+        </li>
+       
+       </ul>
+
+        
+        
+        
+       
+    </nav>
+
+      
 
       <header id="picture-heading">
         <div id="heading">
-            Protect Our Butterfies Our Future Depends On Them
+            <p class="text_head">
+              Protect Our <br> Butterfies <br> Our Future <br> Depends On Them
+            </p> 
         </div>
-        <img src="images/header_img.png" alt="Black and orange butterfly on a leaf">
+        <img class="head_img" src="images/header_img.png" alt="Black and orange butterfly on a leaf">
 
       </header>
-      
+
+      <div class="space"></div>
+
       <section id="endanger">
 
 
-        <img src="images/endangered.png" alt="orange butterfly on orange flower">
+        <img id="img_2" src="images/endangered.png" alt="orange butterfly on orange flower">
 
-        <table>
-            <tr>
-                <td>25</td>
-                <td>African butterflies are Extinct</td>
+        <table id="table_1" class="grid-col-span2">
+            <tr class="no-border "> 
+                <td class="number">25</td>
+                <td class="table_text">African butterflies are Extinct</td>
             </tr>
             <tr>
-                <td>10</td>
-                <td>Species are endangered</td>
+                <td  class="number">10</td>
+                <td  class="table_text">Species are endangered</td>
             </tr>
-            <tr>
-                <td>5</td>
-                <td>Species saved from Extinction</td>
+            <tr class="no-border">
+                <td  class="number">5</td>
+                <td class="table_text">Species saved from Extinction</td>
             </tr>
         </table>
-
-        <button>Find out More</button>
+       <a  href="#"> <button id="button1">Find out More</button></a>
 
 
       </section>

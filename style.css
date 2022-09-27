@@ -1,3 +1,338 @@
+:root{
+    /*primary colors*/
+
+    --black: hsla(293, 8%, 23%, 1);
+    --orange: hsla(2, 71%,55%,1);
+
+    /*Neautral Colors*/
+
+    --white: hsla(52, 100%, 95%,1);
+    --blue: hsla(218, 46%, 39%, 1);
+    --purple: hsla(244, 29%, 49%, 1);
+
+
+    /*Typography*/
+    --font-family-main:'Open Sans', sans-serif;
+    --font-family-auxilary: 'Istok Web', sans-serif;
+    --font-size: 32px;
+    --font-size-aux: 24px;
+    --font-weight-thick: 700;
+    --font-weight-thin: 300;
+
+
+}
+
+
+
 body {
- background-color: gray;
+ background-color: #d9d9d9; 
+ position: relative;
+ margin: 0;
+ font-family: var(--font-family-main);
+
+}
+
+main {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 2.5em);
+
+}
+
+
+nav {
+    background-color: var(--black);
+    height: 3.5em ;
+    width: 1440px;
+    position: absolute;
+    top: 0;
+    justify-content:space-between;
+   
+ 
+}
+
+.nav-extention {
+
+    background-color: var(--black);
+    height:3.5em;
+    width: 100%;
+ 
+
+}
+
+.primary-nav {
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    margin-right: 2rem;
+
+
+
+
+}
+
+
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    gap: 3rem;
+   
+  
+ 
+}
+
+li:hover {
+    
+    padding-bottom: 0.5em;
+    border-width: 0.2em;
+    border-color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 2px;
+    
+    
+    
+}
+
+.logo-head {
+    margin-left: 3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    display: block;
+    
+
+}
+
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown {
+    display: inline ;
+}
+
+
+.head_img {
+    
+
+    
+    width: 1440px;
+    height: 400px;
+    left: 100px;
+    top: 56px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+The header div */
+
+#heading {
+  
+    align-items: center;
+    position: absolute;
+    
+    width: 500px;
+    height:400px;
+    top: 0;
+    color: white;
+    background: linear-gradient(90deg, #3E363F 0%, rgba(62, 54, 63, 0.951729) 34.66%, rgba(62, 54, 63, 0.749045) 60.41%, rgba(62, 54, 63, 0) 92.63%);
+
+
+    
+
+}
+
+.space {
+    height: 400px;
+    /*since header is absolute, it does not create space
+    this div create that space in order for the other so show up*/
+    
+}
+
+
+header {
+    position: absolute;
+}
+
+#picture-heading {
+    width: auto;
+    background-color: var(--black);
+    height:400px;
+ 
+}
+
+
+.text_head {
+    
+    margin: 50px;
+    
+    text-align: justify;
+    font-weight: 700;
+    font-size:40px;
+    font-family: var(--font-family-auxilary);
+
+
+}
+
+
+
+
+/*Section endangered*/
+
+#endanger {
+    
+    background-color: var(--black);
+    width:auto;
+    height: 400px;
+    color: white;
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+
+ 
+  
+
+    
+    gap: 1rem;
+    
+}
+
+
+.grid-col-span2 {
+        grid-column-start: span 2;
+        
+       
+}
+
+#img_2 {
+    display: block;
+    margin: 20px;
+    width: 550px;
+    grid-row-start: span 2;
+    grid-row-end: 3;
+   
+}
+#table_1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    border-collapse: collapse;
+    margin-top: 20px;
+    height: 50px;
+    width: 700px;
+
+
+}
+tr {
+    border-color: white;
+    border: dashed 4px;
+    border-width: 5px;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+   
+    
+    
+    
+}
+.no-border {
+    border-top: none;
+  
+
+}
+
+.number {
+    font-size: 60px;
+    text-align:center;
+}
+
+.table_text {
+    padding-left: 20px;
+  
+
+}
+
+#button1 {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+
+
+
+}
+
+#button1:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+    .botton1 {
+        grid-column-start: 3;
+        grid-column-end: 2;
+        
+    }
+
+
+ 
+
+
+
+
+
+
+footer {
+    background-color: var(--black);
+    height: 250px;
+}
+
+
+#img_2 {
+    display: block;
+}
+
+
+#report {
+    background-color: var(--orange);
+    height: 300px;
+    color: white;
+}
+
+
+#learn_More {
+
+    background-color: var(--purple);
+    height:300px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
