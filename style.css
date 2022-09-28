@@ -502,4 +502,14 @@ footer table a:hover {
     border-left: none;
     border-right: none;
     border-radius: 2px;
+    
+}
+.socials img {
+    padding: 10px;
+    width: 30px;
+}
+
+.socials {
+    padding-left: 200px;
+
 }
